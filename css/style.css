@@ -1,0 +1,35 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header {
+    background: rgb(255, 255, 150);
+    padding: 20px;
+}
+.pagination {
+    display: inline-block;
+}
+.pagination a{
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 3px;
+    border-radius: 5px;
+}
+.pagination a.active{
+    background-color: cadetblue;
+    color:#ccff96;
+}
+.pagination a:hover:not(.active) {
+    background-color: cornflowerblue;
+    color: #ffa6cb;
+}
+article{
+    background: #9ed2ff;
+    padding: 30px;
+    margin: 30px;
+    text-align: justify;
+    display: flexbox;
+}

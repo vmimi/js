@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css\style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scalable=1.0 user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- jQuery kód ide fog érkezni: -->
+        <script>
+            $(document).ready(function(){
+                $("article").hide();
+                $("#a1").show();
+                $("a").click(function(){
+                    var nav = $(this).index();
+                    $("a").removeClass("active");
+                    $(this).addClass("active");
+                    $("article").hide();
+                    if(nav == 0){
+                        $("#a1").show();
+                    }
+                    else if(nav == 6){
+                        $("#a5").show();
+                    }
+                    else
+                    $("#a"+(nav) + "").show();
+                }
+
+                );
+            }
+
+            );
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>Lapok tördelése</h1>
+            </header>
+            <nav>
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a class="active" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">&raquo;</a>
+                </div>
+            </nav>
+            <section>
+                    <article id="a1">
+                      PG1  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat eros, viverra et porta a, ultrices facilisis nisl. Quisque mattis mi sit amet lacus sodales, ornare porta erat volutpat. Nulla facilisi. Nulla eleifend arcu in bibendum elementum. Cras id magna pulvinar, vestibulum quam et, auctor lectus. Suspendisse blandit sapien nec dolor pellentesque congue. Aenean efficitur, lorem et placerat pharetra, sem erat vestibulum libero, quis mattis nibh ligula nec lacus. Quisque vel nibh ante.
+                    </article>
+                    <article id="a2">
+                     PG2   Vestibulum et volutpat leo. Vestibulum nibh erat, porttitor vitae convallis a, laoreet in magna. Donec porta est nec lacus ornare, vel condimentum neque bibendum. Pellentesque nec arcu at magna ornare tempus. Ut scelerisque finibus nisl, in consequat nisl finibus quis. Etiam tristique augue sit amet odio ultricies aliquam quis eu ex. Sed iaculis rutrum urna sed porta. Maecenas et mi arcu. Curabitur nisi purus, dictum a laoreet id, aliquam eget lectus. Phasellus mauris metus, auctor ac venenatis ac, dignissim et nunc. Aliquam ut odio mauris. Aenean tortor turpis, sagittis eu consequat in, eleifend sed purus.
+                    </article>
+                    <article id="a3">
+                     PG3   Aliquam luctus in dui pellentesque hendrerit. Nunc suscipit mauris sed enim vestibulum eleifend. Quisque in rhoncus metus. Praesent rhoncus vestibulum accumsan. In pulvinar lobortis enim. Nulla sit amet neque sapien. Nulla facilisi. Suspendisse potenti.
+                    </article>
+                    <article id="a4"> 
+                     PG4   Donec vitae cursus elit, a consequat elit. Nunc eleifend lectus dolor, in scelerisque ligula interdum vel. Nulla scelerisque libero ac elit rutrum, rutrum ultricies eros pulvinar. Proin eu arcu ac diam bibendum finibus. Aliquam finibus, felis tempor consectetur molestie, neque neque molestie tellus, cursus fringilla tellus augue a dui. Ut augue lorem, fringilla ac pretium ac, mattis id lacus. Sed fringilla, diam sed fringilla fringilla, nunc nunc pellentesque magna, sit amet rutrum ex elit sed eros. Duis pellentesque ornare ante venenatis condimentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer molestie fermentum turpis, at elementum orci tincidunt in. Suspendisse feugiat aliquam euismod.
+                    </article>
+                    <article id="a5">
+                     PG5   Nam viverra nisi vel nunc ultricies tristique. Aliquam volutpat, risus a egestas faucibus, dui dolor varius ligula, et placerat tellus neque ac lacus. Mauris a nibh nisl. Nullam urna ante, accumsan vitae neque a, consequat lobortis mi. In hac habitasse platea dictumst. Proin elementum tempor diam in consequat. Cras varius, ante quis scelerisque fermentum, arcu neque hendrerit risus, non euismod nisl purus non quam. Phasellus dignissim augue a lorem euismod pulvinar. Curabitur dapibus non neque et tempor.
+                    </article>
+            </section>
+        </div>
+    </body>
+</html>
